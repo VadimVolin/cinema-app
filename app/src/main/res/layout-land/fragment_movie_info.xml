@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_yellow_color"
+    tools:context=".ui.MovieInfoFragment">
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/player_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/playerBackground"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/posterImage"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:foreground="@drawable/horizontal_gradient_img"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageButton
+            android:id="@+id/play_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/play_btn"
+            android:src="@drawable/ic_play_24"
+            app:layout_constraintBottom_toBottomOf="@+id/posterImage"
+            app:layout_constraintEnd_toEndOf="@+id/posterImage"
+            app:layout_constraintStart_toEndOf="@+id/posterImage"
+            app:layout_constraintTop_toTopOf="@+id/posterImage"
+            tools:src="@drawable/ic_play_24" />
+
+        <TextView
+            android:id="@+id/movieTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/posterImage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/genreLabel"
+            style="@style/info_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/genre_label"
+            app:layout_constraintEnd_toEndOf="@+id/languagesLabel"
+            app:layout_constraintTop_toBottomOf="@+id/movieTitle" />
+
+        <TextView
+            android:id="@+id/movieGenre"
+            style="@style/info_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/languagesLabel"
+            app:layout_constraintTop_toBottomOf="@+id/movieTitle" />
+
+
+        <TextView
+            android:id="@+id/languagesLabel"
+            style="@style/info_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/languages_label"
+            app:layout_constraintStart_toEndOf="@+id/posterImage"
+            app:layout_constraintTop_toBottomOf="@+id/movieGenre" />
+
+        <TextView
+            android:id="@+id/movieLanguages"
+            style="@style/info_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/languagesLabel"
+            app:layout_constraintTop_toBottomOf="@+id/movieGenre" />
+
+
+        <TextView
+            android:id="@+id/countryLabel"
+            style="@style/info_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/country_label"
+            app:layout_constraintEnd_toEndOf="@+id/languagesLabel"
+            app:layout_constraintTop_toBottomOf="@+id/movieLanguages" />
+
+        <TextView
+            android:id="@+id/movieCountry"
+            style="@style/info_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/languagesLabel"
+            app:layout_constraintTop_toBottomOf="@+id/movieLanguages" />
+
+
+        <TextView
+            android:id="@+id/releaseLabel"
+            style="@style/info_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/release_label"
+            app:layout_constraintEnd_toEndOf="@+id/languagesLabel"
+            app:layout_constraintTop_toBottomOf="@+id/movieCountry" />
+
+        <TextView
+            android:id="@+id/releasedDate"
+            style="@style/info_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/languagesLabel"
+            app:layout_constraintTop_toBottomOf="@+id/movieCountry" />
+
+
+        <TextView
+            android:id="@+id/directorLabel"
+            style="@style/info_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/director_label"
+            app:layout_constraintEnd_toEndOf="@+id/languagesLabel"
+            app:layout_constraintTop_toBottomOf="@+id/releasedDate" />
+
+        <TextView
+            android:id="@+id/movieDirector"
+            style="@style/info_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/languagesLabel"
+            app:layout_constraintTop_toBottomOf="@+id/releasedDate" />
+
+
+        <TextView
+            android:id="@+id/actorsLabel"
+            style="@style/info_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/actors_label"
+            app:layout_constraintEnd_toEndOf="@+id/languagesLabel"
+            app:layout_constraintTop_toBottomOf="@+id/movieDirector" />
+
+        <TextView
+            android:id="@+id/movieActors"
+            style="@style/info_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/languagesLabel"
+            app:layout_constraintTop_toBottomOf="@+id/movieDirector" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageButton
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/back_btn"
+        android:src="@drawable/ic_baseline_keyboard_backspace_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/desc_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/description_btn"
+        android:src="@drawable/ic_description_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

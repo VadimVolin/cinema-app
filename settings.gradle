@@ -1,0 +1,6 @@
+include ':util'
+include ':tv'
+include ':movie-api'
+include ':tv'
+include ':app'
+rootProject.name = "DalStream"
