@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">DalStream</string>
+    <string name="title_activity_main">MainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="NET_CONNECTION">Check your internet connection</string>
+    <string name="BAD_REQUEST_400">Try other keyword</string>
+    <string name="NOT_FOUND_404">Not found</string>
+    <string name="SERVER_ERROR_500">Sorry, service not respond now</string>
+    <string name="BAD_GATEWAY_502">Try onemore</string>
+    <string name="SERVICE_UNAVAILABLE_503">Service unevailable, try later</string>
+    <string name="NO_CONTENT_204">Results not found</string>
+    <string name="play_btn_text">play</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="empty_string_warning_text">Please, write part of name</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_input_error_alert">Please, write only character or numbers</string>
+    <string name="search_input_empty_alert">Please, write text key word</string>
+    <string name="search_input_regexp">[^\\W_]*</string>
+    <string name="movie_card_desc">Movie poster</string>
+    <string name="watch_btn_text">watch</string>
+    <string name="movie_poster_desc">movie_poster_description</string>
+    <string name="splash_animation_img_desc">splash_animation_img</string>
+    <string name="menu_search_item">Search</string>
+    <string name="menu_catalog_item">Catalog</string>
+
+</resources>

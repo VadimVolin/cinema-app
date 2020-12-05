@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="opacities">#0AFFFFFF</color>
+    <color name="darkBg">#212121</color>
+    <color name="lightDarkBg">#484848</color>
+    <color name="lighterDark">#a4a4a4</color>
+    <color name="playerBackground">#000000</color>
+    <color name="green">#43A047</color>
+    <color name="main_yellow_color">#FFEA00</color>
+    <color name="main_pink_color">#F50057</color>
+    <color name="main_pink_pressed">#C51162</color>
+    <color name="black_overlay">#66000000</color>
+</resources>

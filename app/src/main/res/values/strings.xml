@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">DalStream</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="edit_text_hint">Search..</string>
+    <string name="description">Description</string>
+    <string name="genre_label">Genre:</string>
+    <string name="languages_label">Languages:</string>
+    <string name="country_label">Country:</string>
+    <string name="release_label">Release:</string>
+    <string name="director_label">Director:</string>
+    <string name="actors_label">Actors:</string>
+
+    <string name="NET_CONNECTION">Check your internet connection</string>
+    <string name="BAD_REQUEST_400">Try other keyword</string>
+    <string name="NOT_FOUND_404">Not found</string>
+    <string name="SERVER_ERROR_500">Sorry, service not respond now</string>
+    <string name="BAD_GATEWAY_502">Try onemore</string>
+    <string name="SERVICE_UNEVAILABLE_503">Service unevailable, try later</string>
+    <string name="NO_CONTENT_204">Results not found</string>
+    <string name="play_btn_text">play</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="empty_string_warning_text">Please, write part of name</string>
+    <string name="title_activity_splash">FullscreenActivity</string>
+</resources>

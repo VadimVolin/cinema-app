@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="opacity_yellow_color">#95FFEA00</color>
+    <color name="main_yellow_color">#FFEA00</color>
+    <color name="main_yellow_pressed_color">#E1CE01</color>
+    <color name="main_pink_color">#F50057</color>
+    <color name="main_pink_pressed">#C51162</color>
+    <color name="black_overlay">#9A000000</color>
+    <color name="black_high_opacity">#4D000000</color>
+    <color name="black">#000000</color>
+    <color name="opacity">#00000000</color>
+    <color name="base_light_text">#FFCCCCCC</color>
+    <color name="dark_background">#FF424242</color>
+</resources>
