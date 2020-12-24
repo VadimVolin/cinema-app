@@ -16,7 +16,7 @@ public class CachedMovieServiceImpl implements CachedMovieService {
     public static final String TAG = CachedMovieServiceImpl.class.getCanonicalName();
     public static final String BASE_URL = "https://www.omdbapi.com/";
     private static CachedMovieService cachedMovieServiceInstance;
-    private MovieApiREST movieApiREST;
+    private final MovieApiREST movieApiREST;
 
     private CachedMovieServiceImpl() {
         Retrofit retrofit = new Retrofit.Builder()
