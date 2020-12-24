@@ -257,15 +257,18 @@ public class MovieInfoFragment extends Fragment {
     /**
      * Subscribe on update in LiveData for Error handling, update MovieDetails info
      */
-    @SuppressLint("WrongConstant")
     public void subscribeOnLoadLiveData() {
         movieDetailsViewModel.getMovieDetailsLiveData().observe(getViewLifecycleOwner(), movie -> {
             movieDetails = movie;
             initViews();
         });
 
-        movieDetailsViewModel.getErrorLiveData().observe(getViewLifecycleOwner(), status ->
-                Snackbar.make(fragmentMovieInfoBinding.getRoot(), status.getResourceId(), Snackbar.LENGTH_SHORT).show()
+        movieDetailsViewModel.getErrorLiveData().observe(getViewLifecycleOwner(), status -> {
+                    if (status != null) {
+                        Snackbar.make(fragmentMovieInfoBinding.getRoot(), status.getResourceId(), Snackbar.LENGTH_SHORT).show();
+                        movieDetailsViewModel.getErrorLiveData().setValue(null);
+                    }
+                }
         );
     }
 

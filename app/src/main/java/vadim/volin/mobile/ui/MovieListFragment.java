@@ -180,8 +180,12 @@ public class MovieListFragment extends Fragment {
                                 }
                             });
 
-            movieListViewModel.getErrorLiveData().observe(getViewLifecycleOwner(), status ->
-                    Snackbar.make(fragmentMainBinding.getRoot(), status.getResourceId(), Snackbar.LENGTH_LONG).show()
+            movieListViewModel.getErrorLiveData().observe(getViewLifecycleOwner(), status -> {
+                        if (status != null) {
+                            Snackbar.make(fragmentMainBinding.getRoot(), status.getResourceId(), Snackbar.LENGTH_LONG).show();
+                            movieListViewModel.getErrorLiveData().setValue(null);
+                        }
+                    }
             );
         }
     }
